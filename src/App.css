@@ -5,9 +5,39 @@
 .entry-anim {
   opacity: 0;
   animation-name: slide-in;
-  animation-duration: .5s;
+  animation-duration: .75s;
   animation-fill-mode: forwards;
-  animation-timing-function: ease-in-out;
+  animation-timing-function: ease-out;
+}
+
+.expand-anim {
+  opacity: 0;
+  animation-name: expand;
+  animation-duration: .75s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+}
+
+.welcome-text {
+  display: inline-block;
+  animation-name: shrink-out;
+  animation-delay: 1s;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+  overflow: hidden;
+  vertical-align: top;
+  white-space: nowrap;
+}
+
+.title-block {
+  display: inline-block;
+  padding-right: 10px;
+}
+
+.social-span {
+  display: inline-block;
+  padding-right: 10px;
 }
 
 .App-body {
@@ -48,13 +78,59 @@ hr {
 }
 
 @keyframes slide-in {
-  from {
+  0% {
     opacity: 0;
-    transform: translateY(-20px);
+    transform: translateY(-15px);
   }
-  to {
+  15% {
+    opacity: .5;
+  }
+  30% {
+    opacity: .25;
+  }
+  45% {
+    opacity: 1;
+    transform: translateY(-15px);
+  }
+  100% {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@keyframes expand {
+  0% {
+    max-width: 0%;
+    opacity: 0;
+  }
+  15% {
+    opacity: .5;
+  }
+  30% {
+    opacity: .25;
+  }
+  45% {
+    opacity: 1;
+  }
+  100% {
+    max-width: 100%;
+    opacity: 1;
+  }
+}
+
+@keyframes shrink-out {
+  0% {
+    max-width: 100%;
+    opacity: 100%;
+  }
+  50% {
+    opacity: 100%;
+    padding-right: 10px;
+  }
+  100% {
+    max-width: 0%;
+    opacity: 0%;
+    padding-right: 0px;
   }
 }
 
