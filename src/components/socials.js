@@ -3,10 +3,11 @@ import './../App.css'
 
 const Socials = (props) => {
     return (<div>
-        <span className="entry-anim social-span" style={{animationDelay:"1300ms"}}><a href="https://github.com/dawnsheedy">GitHub</a></span>
-        <span className="entry-anim social-span" style={{animationDelay:"1450ms"}}><a href="https://twitter.com/dawnshee_">Twitter</a></span>
-        <span className="entry-anim social-span" style={{animationDelay:"1150ms"}}><a href="https://twitch.tv/dawnshee">Twitch</a></span>
-        <span className="entry-anim social-span" style={{animationDelay:"1600ms"}}><a href="https://www.youtube.com/channel/UCsoFt8m8c9FWTb94m2gBEQA">Youtube</a></span>
+        <span className="entry-anim social-span" style={{animationDelay:"1000ms"}}><a href="mailto:contact@dawnsheedy.com">Contact</a></span>
+        <div style={{animationDelay:"2250ms"}} className="vl"></div>
+        <span className="entry-anim social-span" style={{animationDelay:"1250ms"}}><a href={process.env.PUBLIC_URL + '/resume-dawn-2020.pdf' }>Resumé</a></span>
+        <div style={{animationDelay:"2250ms"}} className="vl"></div>
+        <span className="entry-anim social-span" style={{animationDelay:"1500ms"}}><a href="https://github.com/dawnsheedy">GitHub</a></span>
     </div>);
 }
 

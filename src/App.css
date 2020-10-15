@@ -1,5 +1,48 @@
+.License-text {
+  line-height: 1;
+  padding:0px;
+  margin:0px;
+}
+
 .App-headline {
   font-size: 60px;
+  display: inline-block;
+  line-height: 1.0;
+}
+
+.App-subline {
+  margin-top: -8px;
+  margin-bottom: 6px;
+  font-size: 30px;
+  opacity: .5;
+  display: inline-block;
+  line-height: 1;
+}
+
+.vl {
+  border-left: 1.5px solid #e4e4e4;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  animation-name: divider-entry;
+  animation-duration: .75s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+}
+
+@keyframes divider-entry {
+  0% {
+    opacity: 0;
+    height: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  100% {
+    opacity: 1;
+    height: 14px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
 }
 
 .entry-anim {
@@ -42,6 +85,7 @@
 
 .App-body {
   min-height: 100vh;
+  min-width: 100vw;
   background-color: #2a2630 !important;
   color: #e4e4e4;
 }
@@ -62,6 +106,7 @@ a {
   color: #c7a5cf;
   font-weight: 600;
   font-size: 18px;
+  line-height: 1;
   text-decoration: none;
 }
 
@@ -75,6 +120,8 @@ a:hover {
 
 hr {
   border-top: 1px #e4e4e4 solid;
+  margin-bottom: 14px;
+  margin-left: 0;
 }
 
 @keyframes slide-in {
@@ -82,16 +129,7 @@ hr {
     opacity: 0;
     transform: translateY(-15px);
   }
-  15% {
-    opacity: .5;
-  }
-  30% {
-    opacity: .25;
-  }
-  45% {
-    opacity: 1;
-    transform: translateY(-15px);
-  }
+
   100% {
     opacity: 1;
     transform: translateY(0);
@@ -102,15 +140,6 @@ hr {
   0% {
     max-width: 0%;
     opacity: 0;
-  }
-  15% {
-    opacity: .5;
-  }
-  30% {
-    opacity: .25;
-  }
-  45% {
-    opacity: 1;
   }
   100% {
     max-width: 100%;

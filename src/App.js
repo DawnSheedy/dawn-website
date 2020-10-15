@@ -10,7 +10,7 @@ function App() {
     <div className="App-body">
       <Container className="App-center">
         <Row className="justify-content-md-left">
-          <Col sm={{ span: 12 }} md={{ span: 9, offset: 3 }} lg={{ span: 8, offset: 4 }}>
+          <Col sm={{ span: 12 }} md={{ span: 10, offset: 2 }} lg={{ span: 9, offset: 3 }}>
             <Title />
             <Socials />
           </Col>
