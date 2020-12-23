@@ -4,6 +4,11 @@
   margin:0px;
 }
 
+.Headline-container {
+  height: 100vh;
+  width: 100vw;
+}
+
 .App-headline {
   font-size: 60px;
   display: inline-block;
@@ -84,10 +89,13 @@
 }
 
 .App-body {
-  min-height: 100vh;
-  min-width: 100vw;
   background-color: #2a2630 !important;
   color: #e4e4e4;
+}
+
+.App-welcome {
+  min-height: 100vh;
+  min-width: 100vw;
 }
 
 .App-center {
