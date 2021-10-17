@@ -1,7 +1,56 @@
-.License-text {
-  line-height: 1;
-  padding:0px;
-  margin:0px;
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,400;0,600;1,100;1,200;1,400;1,600&display=swap');
+
+.corner-element {
+  position: absolute;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #e4e4e4;
+  width: 150px;
+  height: 25px;
+  opacity: .6;
+}
+
+.corner-text {
+  margin: 4px;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 200;
+  text-transform: uppercase;
+}
+
+.corner-element.ul {
+  top: 14px;
+  left: 14px;
+  border-right: 0;
+  border-bottom: 0;
+}
+
+.corner-element.ur {
+  top: 14px;
+  right: 14px;
+  text-align: right;
+  border-bottom: 0;
+  border-left: 0;
+}
+
+.corner-element.bl {
+  bottom: 14px;
+  left: 14px;
+  border-top: 0;
+  border-right: 0;
+}
+
+.corner-element.br {
+  bottom: 14px;
+  right: 14px;
+  text-align: right;
+  border-top: 0;
+  border-left: 0;
+}
+
+body {
+  margin: 0;
+  font-family: 'Exo 2', sans-serif !important;
 }
 
 .Headline-container {
@@ -11,17 +60,63 @@
 
 .App-headline {
   font-size: 60px;
+  font-weight: 600;
   display: inline-block;
   line-height: 1.0;
+  font-style:italic;
+  color: #e4e4e4
 }
 
 .App-subline {
+  font-weight: 200;
   margin-top: -8px;
   margin-bottom: 6px;
   font-size: 30px;
   opacity: .5;
   display: inline-block;
   line-height: 1;
+  font-style: italic;
+  color: #e4e4e4;
+}
+
+.subtitle {
+  display: block;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: italic;
+  color: #e4e4e4;
+}
+
+.social-link-container {
+  max-height: 400px;
+  padding: 0;
+  margin: 0;
+  display: block;
+  overflow-y: hidden;
+}
+
+.social-link-container.closed {
+  max-height: 0px;
+  overflow: visible;
+}
+
+.social-link-container.open {
+  max-height: 0px;
+  animation-name: expand-in;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+}
+ 
+.social-line {
+  position: relative;
+  display:block;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+.social-line.inline-social {
+  display: inline-block;
 }
 
 .vl {
@@ -29,10 +124,16 @@
   display: inline-block;
   margin: 0;
   padding: 0;
+  margin-left: -6px;
   animation-name: divider-entry;
-  animation-duration: .75s;
+  animation-duration: .5s;
   animation-fill-mode: forwards;
   animation-timing-function: ease-out;
+}
+
+.social-span {
+  display: inline-block;
+  padding-left: 5px;
 }
 
 @keyframes divider-entry {
@@ -42,20 +143,44 @@
     padding-left: 0px;
     padding-right: 0px;
   }
+  50% {
+    transform: rotate(0deg) translate(0px, 0px);
+  }
   100% {
     opacity: 1;
     height: 14px;
     padding-left: 5px;
     padding-right: 5px;
+    transform: rotate(20deg) translate(10px, -1.5px);
   }
 }
 
+.low-opacity {
+  opacity: 0;
+}
+
+@media only screen and (min-width: 900px) { 
+  .low-opacity {
+    opacity: .4;
+  }
+}
+
+
+
 .entry-anim {
   opacity: 0;
-  animation-name: slide-in;
+  animation-name: blink-in;
   animation-duration: .75s;
   animation-fill-mode: forwards;
-  animation-timing-function: ease-out;
+  animation-timing-function: linear;
+}
+
+.entry-anim-harsh {
+  opacity: 0;
+  animation-name: blink-in;
+  animation-duration: .5;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
 }
 
 .expand-anim {
@@ -79,11 +204,6 @@
 }
 
 .title-block {
-  display: inline-block;
-  padding-right: 10px;
-}
-
-.social-span {
   display: inline-block;
   padding-right: 10px;
 }
@@ -112,7 +232,7 @@
 
 a {
   color: #c7a5cf;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 18px;
   line-height: 1;
   text-decoration: none;
@@ -130,6 +250,57 @@ hr {
   border-top: 1px #e4e4e4 solid;
   margin-bottom: 14px;
   margin-left: 0;
+}
+
+@keyframes expand-in {
+  0% {
+    max-height: 0px;
+  }
+  100% {
+    max-height: 400px;
+  }
+}
+
+@keyframes blink-in {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: .3;
+  }
+  20% {
+    opacity: 0;
+  }
+  30% {
+    opacity: .3;
+  }
+  40% {
+    opacity: .1
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes blink-in-harsh {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: .3;
+  }
+  20% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes slide-in {
