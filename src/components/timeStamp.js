@@ -7,7 +7,7 @@ const TimeStamp = (props) => {
     useEffect(() => {
       const interval = setInterval(() => {
         setContent(generateTimeStamp())
-      }, 1000)
+      }, 500)
 
       return () => {
         clearInterval(interval)
@@ -19,7 +19,7 @@ const TimeStamp = (props) => {
 
 function generateTimeStamp() {
   let date = new Date();
-  return "local."+date.getHours()+"."+date.getMinutes()+"."+date.getSeconds()+"."+date.getMilliseconds();
+  return "local."+date.getHours()+":"+date.getMinutes()+":"+date.getSeconds()+":"+date.getMilliseconds();
 }
 
 export default TimeStamp;
