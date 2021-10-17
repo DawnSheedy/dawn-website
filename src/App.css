@@ -64,7 +64,6 @@ body {
   display: inline-block;
   line-height: 1.0;
   font-style:italic;
-  color: #e4e4e4
 }
 
 .App-subline {
@@ -76,7 +75,6 @@ body {
   display: inline-block;
   line-height: 1;
   font-style: italic;
-  color: #e4e4e4;
 }
 
 .subtitle {
@@ -84,7 +82,6 @@ body {
   font-size: 18px;
   font-weight: 400;
   font-style: italic;
-  color: #e4e4e4;
 }
 
 .social-link-container {
@@ -210,7 +207,7 @@ body {
 
 .App-body {
   background-color: #2a2630 !important;
-  color: #e4e4e4;
+  color: #FFFFFF;
 }
 
 .App-welcome {
@@ -231,7 +228,7 @@ body {
 }
 
 a {
-  color: #c7a5cf;
+  color: #FFFFFF;
   font-weight: 400;
   font-size: 18px;
   line-height: 1;
@@ -239,7 +236,7 @@ a {
 }
 
 a:hover {
-  color: #e4e4e4;
+  color: #c7a5cf;
   animation-name: link-hover;
   animation-duration: .5s;
   animation-timing-function: ease-in-out;
