@@ -23,6 +23,9 @@ const LoadingElementStatus = (props) => {
     })
 
     if (done) {
+        if (props.pride) {
+            return(<span>[<span class="bluetext entry-anim">p</span><span class="pinktext entry-anim">r</span><span class="whitetext entry-anim">i</span><span class="pinktext entry-anim">d</span><span class="bluetext entry-anim">e</span>]</span>)
+        }
         if (props.fail) {
             return (
                 <span>[<span class="redtext entry-anim">error</span>]</span>
