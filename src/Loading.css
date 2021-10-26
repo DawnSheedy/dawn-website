@@ -14,15 +14,21 @@
     text-align: right;
 }
 
-.bluetext {
-    background-color: #55CDFC;
-    color: #55CDFC;
+.yellowtext {
+    background-color: #FFF430;
+    color: #FFF430;
     text-shadow: none;
 }
 
-.pinktext {
-    background-color: #F7A8B8;
-    color: #F7A8B8;
+.purpletext {
+    background-color: #9C59D1;
+    color: #9C59D1;
+    text-shadow: none;
+}
+
+.blacktext {
+    background-color: #000000;
+    color: #000000;
     text-shadow: none;
 }
 

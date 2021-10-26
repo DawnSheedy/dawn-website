@@ -17,7 +17,7 @@ const CornerElements = (props) => {
         </CornerElement>
         <CornerElement edge="br" content="">
             <LoadingElementStatus timeOut={1500} pride={true} text="" />
-            <span>:trns_prd</span>
+            <span>:nb_prd</span>
         </CornerElement>
     </>);
 }
