@@ -8,7 +8,7 @@ import TimeStamp from './timeStamp';
 
 const CornerElements = (props) => {
     return (<>
-        <CornerElement edge="bl" content="bl_">
+        <CornerElement edge="bl" content="ds_">
             <FakeVersionNumber />
         </CornerElement>
         <CornerElement edge="ur" content="">

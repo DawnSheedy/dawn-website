@@ -1,10 +1,10 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import './../Loading.css'
 import LoadingElementStatus from './loadingElementStatus';
 
 const LoadingElement = (props) => {
     let delay = (props.index*100)+randomNumber(500);
-    return (<div class="loading-element entry-anim" style={{animationDelay: delay+"ms"}}>
+    return (<div id={props.id} className="loading-element entry-anim" style={{animationDelay: delay+"ms"}}>
         <LoadingElementStatus fail={shouldFail()} text={props.statusText} timeOut={delay+1000+randomNumber(5000)} /><span>:{props.text}</span>
     </div>);
 }

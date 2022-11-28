@@ -7,13 +7,13 @@ const LoadingElementStatus = (props) => {
 
     useEffect(() => {
         let interval = setInterval(() => {
-            setContent(content+1)
+            setContent(content + 1)
             if (content >= 3) {
                 setContent(1)
             }
         }, 333)
 
-        let timeOut = setTimeout(() => {
+        setTimeout(() => {
             isDone(true)
         }, props.timeOut)
 
@@ -24,25 +24,25 @@ const LoadingElementStatus = (props) => {
 
     if (done) {
         if (props.pride) {
-            return(<span>[<span class="yellowtext entry-anim">n</span><span class="whitetext entry-anim">b</span><span class="purpletext entry-anim">n</span><span class="blacktext entry-anim">b</span>]</span>)
+            return (<span>[<span className="yellowtext entry-anim">n</span><span className="whitetext entry-anim">b</span><span className="purpletext entry-anim">n</span><span className="blacktext entry-anim">b</span>]</span>)
         }
         if (props.fail) {
             return (
-                <span>[<span class="redtext entry-anim">error</span>]</span>
+                <span>[<span className="redtext entry-anim">error</span>]</span>
             )
         }
         return (
-            <span>[<span class="greentext entry-anim">{props.text}</span>]</span>
+            <span>[<span className="greentext entry-anim">{props.text}</span>]</span>
         )
     } else {
         return (<span>[{getDots(content)}]</span>);
     }
-    
+
 }
 
 function getDots(num) {
     let value = ""
-    for (var i=0; i<num; i++) {
+    for (var i = 0; i < num; i++) {
         value += "."
     }
     return value;

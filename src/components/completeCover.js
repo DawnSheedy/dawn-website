@@ -9,10 +9,10 @@ const CompleteCover = (props) => {
     }) 
 
     return (<>
-        <div class="quad-base four" style={{animationDelay: props.delay+"ms"}}></div>
-        <div class="quad-base three" style={{animationDelay: (props.delay+50)+"ms"}}></div>
-        <div class="quad-base two" style={{animationDelay: (props.delay+100)+"ms"}}></div>
-        <div class="quad-base one" style={{animationDelay: (props.delay+150)+"ms"}}></div>
+        <div className="quad-base four" style={{animationDelay: props.delay+"ms"}}></div>
+        <div className="quad-base three" style={{animationDelay: (props.delay+50)+"ms"}}></div>
+        <div className="quad-base two" style={{animationDelay: (props.delay+100)+"ms"}}></div>
+        <div className="quad-base one" style={{animationDelay: (props.delay+150)+"ms"}}></div>
     </>);
 }
 

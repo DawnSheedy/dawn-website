@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useState} from 'react';
 import Title from './title'
 import Socials from './socials'
 import { Col, Row, Container } from 'react-bootstrap';
@@ -19,7 +19,7 @@ const PageSelector = (props) => {
     if (page === "home") {
         return (
             <>
-                <div class="low-opacity"><LoadingCover selector={setPage} /></div>
+                <div className="low-opacity"><LoadingCover selector={setPage} /></div>
                 <CornerElements />
                 <Container className="App-center">
                   <Row className="justify-content-md-left">

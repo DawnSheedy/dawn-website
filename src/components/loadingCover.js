@@ -1,6 +1,5 @@
-import React, { useEffect } from 'react';
+import React, { useState } from 'react';
 import './../Loading.css'
-import CompleteCover from './completeCover';
 import LoadingElement from './loadingElement';
 import LoadingElementStatus from './loadingElementStatus';
 
@@ -46,6 +45,10 @@ const messages = [
         pass:"stable"
     },
     {
+        msg:"host_platform_check", 
+        pass:window.navigator.platform
+    },
+    {
         msg:"dbu_setup", 
         pass:"complete"
     },
@@ -64,6 +67,10 @@ const messages = [
     {
         msg:"equipment_status_check", 
         pass:"pass"
+    },
+    {
+        msg:"bus_conn_state", 
+        pass:"active"
     },
     {
         msg:"module_check", 
@@ -186,21 +193,41 @@ const messages = [
         pass:"online"
     },
     {
+        msg:"authentication_state_validation", 
+        pass:"active"
+    },
+    {
+        msg:"rfid_comm_startup", 
+        pass:"complete"
+    },
+    {
+        msg:"418_validation", 
+        pass:"pass"
+    },
+    {
+        msg:"encabulation_spinup", 
+        pass:"complete"
+    },
+    {
         msg:"additional_tests", 
         pass:"pass"
-    }
+    },
+    {
+        msg:"your monitor is bigger than mine", 
+        pass:"it's true"
+    },
 ]
 
+let uniqueLoadingElementId = 0;
+
 const LoadingCover = (props) => {
-    let delay = props.delay
+    const [id] = useState(uniqueLoadingElementId++)
 
-
-
-    return (<div class="loading-cover">
-        <div class="loading-text-vanish">
-        <span class="entry-anim loading-title">system_initialization:<LoadingElementStatus text="complete" timeOut={10000} /></span>
+    return (<div className="loading-cover">
+        <div className="loading-text-vanish">
+        <span className="entry-anim loading-title">system_initialization:<LoadingElementStatus text="complete" timeOut={10000} /></span>
         {messages.map(function(message, index){
-                    return <LoadingElement statusText={message.pass} index={index} text={message.msg} />;
+                    return <LoadingElement id={id} statusText={message.pass} index={index} text={message.msg} />;
                   })}
         </div>
     </div>);
