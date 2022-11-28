@@ -218,16 +218,12 @@ const messages = [
     },
 ]
 
-let uniqueLoadingElementId = 0;
-
 const LoadingCover = (props) => {
-    const [id] = useState(uniqueLoadingElementId++)
-
     return (<div className="loading-cover">
-        <div className="loading-text-vanish">
+        <div key={'root'} className="loading-text-vanish">
         <span className="entry-anim loading-title">system_initialization:<LoadingElementStatus text="complete" timeOut={10000} /></span>
         {messages.map(function(message, index){
-                    return <LoadingElement id={id} statusText={message.pass} index={index} text={message.msg} />;
+                    return <LoadingElement key={index} statusText={message.pass} index={index} text={message.msg} />;
                   })}
         </div>
     </div>);
