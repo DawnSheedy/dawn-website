@@ -1,12 +1,12 @@
 import { InlineLink } from "../general/InlineLink";
 import { SlideInAll } from "../general/SlideInAll";
 import { HorizontalLine } from "../ambient/layout/HorizontalLine";
-import "./About.css";
+import "./Pages.css";
 import { JobList } from "../fragments/JobList/JobList";
 
 export const About = () => {
   return (
-    <div className="about-container">
+    <div className="page-container">
       <SlideInAll>
         <h2>Hi, I'm Dawn 🌄</h2>
         <HorizontalLine leftBrace={false} />
@@ -31,6 +31,15 @@ export const About = () => {
           Here are some specifics, click one for more details:
         </p>
         <JobList></JobList>
+        <h2>Skills 🧠</h2>
+        <HorizontalLine leftBrace={false} />
+        <p>
+          I have a passion for Front End development (I just love to see designs
+          come to life), but I have a well rounded skillset and thrive in both
+          Front End and Full Stack environments. At the end of the day,
+          delivering a quality product is what brings me fulfillment.
+        </p>
+        <p>Here are some specific skills of mine:</p>
         <h2>Resume 📝</h2>
         <HorizontalLine leftBrace={false} />
         <p>
@@ -41,7 +50,7 @@ export const About = () => {
           However, if you want a copy of my Resume,{" "}
           <InlineLink href="/resume">you can click here.</InlineLink>
         </p>
-        <h2>Interests 👁️</h2>
+        <h2>Interests & Projects 👁️</h2>
         <HorizontalLine leftBrace={false} />
         <p>
           In my free time, you'll catch me playing games, listening to music,

@@ -1,0 +1,8 @@
+.page-container {
+    max-width: 640px;
+}
+
+.row-container {
+    display: flex;
+    gap: .5rem;
+}

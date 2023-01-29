@@ -1,25 +1,40 @@
-@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,300;0,400;0,600;1,600&family=IBM+Plex+Mono&family=Major+Mono+Display&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,300;0,400;0,600;1,600&family=IBM+Plex+Mono&family=Major+Mono+Display&display=swap");
 
-@media (prefers-color-scheme: light) {
-  body {
-    background-color: #eee3ff;
-  }
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
 }
 
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: #2a2630;
-  }
+/* Track */
+::-webkit-scrollbar-track {
+  background: #2a2130;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(134, 100, 142);
+  border-radius: 5px;
+  overflow: hidden;
+  transition: all 0.25s;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(82, 61, 87);
 }
 
 html {
   font-size: 16px;
+  overflow: hidden;
 }
 
 body {
   margin: 0;
+  background-color: #2a2630;
   font-size: 1rem;
-  font-family: 'Exo 2', sans-serif;
+  font-family: "Exo 2", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -45,7 +60,20 @@ h1 {
 }
 
 .mono {
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: "IBM Plex Mono", monospace;
+}
+
+.quote {
+  color: #FFFFFF80;
+  font-size: .85rem;
+}
+
+.quote::before {
+  content: '/* ';
+}
+
+.quote::after {
+  content: ' */'
 }
 
 .capital {
@@ -53,6 +81,31 @@ h1 {
 }
 
 .mono-flashy {
-  font-family: 'Major Mono Display', monospace;
+  font-weight: 600;
+  font-family: "Major Mono Display", monospace;
   text-transform: lowercase;
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: #eee3ff;
+  }
+
+  .quote {
+    color: #00000080;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #efd8ff;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(212, 170, 223);
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(162, 124, 171);
+  }
 }

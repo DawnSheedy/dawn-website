@@ -39,11 +39,11 @@
   transition: opacity 0.25s;
 }
 
-.job-list-item-container:hover::before {
+.job-list-item-container:hover::before, .job-list-item-container:focus::before {
   opacity: 1;
 }
 
-.job-list-item-container:hover {
+.job-list-item-container:hover, .job-list-item-container:focus {
   padding-left: 2rem;
   border-left: .5rem solid;
 }
@@ -75,7 +75,7 @@
   .job-list-item-container.current {
     border-left-color: rgb(77, 224, 77);
   }
-  .job-list-item-container.current:hover {
+  .job-list-item-container.current:hover, .job-list-item-container.current:focus {
     border-left-color: rgb(0, 0, 0);
   }
 }

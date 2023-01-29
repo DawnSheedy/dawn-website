@@ -58,7 +58,7 @@ export const CornerElement = ({
       <div
         onClick={onClick}
         className={generateClassNames({
-          "corner-element mono flicker-in scale-in": true,
+          "corner-element mono-flashy flicker-in scale-in": true,
           ...classNameDef,
         })}
         style={{ cursor: onClick ? "pointer" : "auto" }}
@@ -71,7 +71,7 @@ export const CornerElement = ({
     <button
       onClick={onClick}
       className={generateClassNames({
-        "corner-element mono capital flicker-in scale-in": true,
+        "corner-element mono-flashy flicker-in scale-in": true,
         ...classNameDef,
       })}
       style={{ cursor: "pointer" }}

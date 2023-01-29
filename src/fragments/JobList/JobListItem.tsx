@@ -1,3 +1,4 @@
+import React from "react";
 import { useNavigate } from "react-router-dom";
 import { JobListing } from "../../content/contentTypes";
 import { SlideInAll } from "../../general/SlideInAll";
@@ -17,9 +18,16 @@ export const JobListItem = ({
     navigate(`/experience/${slug}`);
   };
 
+  const keyDownhandler = (event: React.KeyboardEvent<HTMLDivElement>) => {
+    if (["Enter", " "].includes(event.key)) {
+      clickHandler();
+    }
+  };
+
   return (
     <div
       onClick={clickHandler}
+      onKeyDown={keyDownhandler}
       tabIndex={0}
       aria-description={`More details about role as a ${title} at ${company}`}
       role="link"

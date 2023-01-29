@@ -21,6 +21,7 @@ export const PageHeading = ({
   subTitle,
   contentDate,
   contentCategory,
+  description,
   contentTags,
   showBottomDivider,
   mono,
@@ -75,9 +76,15 @@ export const PageHeading = ({
           {subTitle}
         </h2>
       )}
-      {showBottomDivider && (
-        <HorizontalLine />
+      {description && (
+        <div
+          className="quote-container mono italics shift-in"
+          style={generateAnimationDelay(200, 400)}
+        >
+          {description}
+        </div>
       )}
+      {showBottomDivider && <HorizontalLine />}
     </div>
   );
 };

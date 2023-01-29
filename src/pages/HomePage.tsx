@@ -4,6 +4,7 @@ import { CenterContentContainer } from "../ambient/layout/CenterContentContainer
 import { CollapsibleContentArea } from "../ambient/layout/CollapsibleContentArea";
 import { PageHeading } from "../ambient/layout/PageHeading";
 import { About } from "./About";
+import { Contact } from "./Contact";
 
 export const HomePage = () => {
   const { pathname: section } = useLocation();
@@ -15,6 +16,7 @@ export const HomePage = () => {
           title="Dawn Sheedy"
           titleFlavorText="[she/they]"
           subTitle="Software Engineer // Seattle"
+          description="I make [and break] modern, responsive web apps."
           showBottomDivider
         ></PageHeading>
         <Button
@@ -36,6 +38,7 @@ export const HomePage = () => {
       <CollapsibleContentArea collapsed={section === "/home"}>
         <Routes>
           <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </CollapsibleContentArea>
     </CenterContentContainer>
