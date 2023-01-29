@@ -1,0 +1,15 @@
+@media screen and (max-width: 1440px) {
+    .app-overlay-container {
+        opacity: 0;
+    }
+}
+
+.app-overlay-container {
+    position: absolute;
+    left: max(1rem, calc(50vw - 960px));
+    top: 1rem;
+    width: calc(100vw - 2rem);
+    height: calc(100vh - 2rem);
+    max-width: 1920px;
+    transition: opacity 0.5s;
+}

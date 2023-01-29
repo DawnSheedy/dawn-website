@@ -1,0 +1,36 @@
+@media (prefers-color-scheme: dark) {
+  .horizontal-line {
+    border-color: #fff;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .horizontal-line {
+    border-color: rgb(64, 52, 68);
+  }
+}
+
+.horizontal-line {
+  margin-top: 1rem;
+  position: relative;
+  overflow: visible;
+}
+
+.horizontal-line.left-brace::before {
+  content: "";
+  position: absolute;
+  width: 2.5rem;
+  transform: translateX(-34px) translateY(-15px) rotate(45deg);
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+}
+
+.horizontal-line.right-brace::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 2.5rem;
+  transform: translateX(35px) translateY(14px) rotate(45deg);
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+}

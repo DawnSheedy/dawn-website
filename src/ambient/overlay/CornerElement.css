@@ -1,0 +1,122 @@
+@media (prefers-color-scheme: dark) {
+    .corner-element {
+        border-color: #fff;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    .corner-element {
+        border-color: rgb(64, 52, 68);
+    }
+}
+
+.corner-element {
+    position: absolute;
+    width: fit-content;
+    min-width: 8rem;
+    min-height: 1rem;
+    padding: .5rem;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    background: none;
+    border: none;
+}
+
+.corner-element.top {
+    top: 0;
+}
+
+.corner-element.bottom {
+    bottom: 0;
+}
+
+.corner-element.left {
+    left: 0;
+    text-align: left;
+}
+
+.corner-element.right {
+    right: 0;
+    text-align: right;
+}
+
+.corner-element::before {
+    position: absolute;
+    content: ' ';
+    border-style: solid;
+    border-width: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.corner-element:hover::after {
+    opacity: 1;
+}
+
+.corner-element::after {
+    position: absolute;
+    content: ' ';
+    border-style: solid;
+    border-width: 0;
+    width: 100%;
+    height: calc(100% + 1px);
+    opacity: 0.5;
+    transition: .25s;
+}
+
+.corner-element.top::before {
+    border-top-width: 1px;
+    top: 0;
+}
+
+.corner-element.bottom::before {
+    border-bottom-width: 1px;
+    bottom: 0;
+}
+
+.corner-element.left::before {
+    border-left-width: 1px;
+    left: 0;
+}
+
+.corner-element.right::before {
+    border-right-width: 1px;
+    right: 0;
+}
+
+/* Corner element ghost */
+
+.corner-element.top:hover::after {
+    top: 0rem;
+}
+
+.corner-element.top::after {
+    
+    top: .5rem;
+}
+
+.corner-element.bottom:hover::after {
+    bottom: 0rem;
+}
+
+.corner-element.bottom::after {
+    bottom: .5rem;
+}
+
+.corner-element.left:hover::after {
+    border-left-width: 8px;
+}
+
+.corner-element.left::after {
+    border-left-width: 1px;
+    left: -.5rem;
+}
+
+.corner-element.right:hover::after {
+    border-right-width: 8px;
+}
+
+.corner-element.right::after {
+    border-right-width: 1px;
+    right: -.5rem;
+}

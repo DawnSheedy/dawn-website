@@ -1,0 +1,119 @@
+@keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+@keyframes flicker-in {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.3;
+  }
+  20% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0.3;
+  }
+  40% {
+    opacity: 0.1;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.flicker-in {
+  animation: flicker-in 0.75s linear;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  opacity: 0;
+}
+
+@keyframes scale-in {
+  0% {
+    transform: scale(80%);
+  }
+  100% {
+    transform: scale(100%);
+  }
+}
+
+.scale-in {
+  animation: scale-in 0.75s, flicker-in 0.75s linear;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  opacity: 0;
+}
+
+@keyframes shift-in {
+  0% {
+    transform: translateX(max(15%, 50px));
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.shift-in {
+  animation: shift-in 0.75s, flicker-in 0.75s linear;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  opacity: 0;
+}
+
+@keyframes fill-in {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.fill-in {
+  animation: fill-in 0.75s, flicker-in 0.75s linear;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  opacity: 0;
+}
+
+@keyframes shift-in-directional-left {
+  0% {
+    transform: translateX(min(-100%, -50px));
+  }
+  100% {
+    transform: translateX(-30px) scaleY(102%);
+  }
+}
+
+.right > .shift-in-directional {
+  animation: shift-in-directional-right 0.5s, fade-in 0.25s linear;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  opacity: 0;
+}
+
+@keyframes shift-in-directional-right {
+  0% {
+    transform: translateX(max(100%, 50px));
+  }
+  100% {
+    transform: translateX(30px) scaleY(102%);
+  }
+}
+
+.left > .shift-in-directional {
+  animation: shift-in-directional-left 0.5s, fade-in 0.25s linear;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  opacity: 0;
+}

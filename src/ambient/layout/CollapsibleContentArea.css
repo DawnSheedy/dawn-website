@@ -1,0 +1,17 @@
+.collapsible-content-area {
+  height: fit-content;
+  opacity: 1;
+  overflow-y: scroll;
+  padding-right: 2rem;
+  transition: all 0.75s;
+  flex-grow: 1;
+  max-height: 100%;
+}
+
+.collapsible-content-area.collapsed {
+  opacity: 0;
+  overflow: hidden;
+  flex-grow: 0;
+  max-height: 0;
+  pointer-events: none;
+}

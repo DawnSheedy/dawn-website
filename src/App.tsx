@@ -1,12 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
-import { EntryBox } from './components/EntryBox/EntryBox';
+import "./App.css";
+import { Overlay } from "./ambient/overlay/Overlay";
+import { Routes, Route, Navigate } from "react-router-dom";
+import { HomePage } from "./pages/HomePage";
+import { NotFound } from "./pages/NotFound";
+import { VoidArea } from "./ambient/overlay/VoidArea";
 
 function App() {
   return (
     <div className="app-container">
-      <div className='main-content-area'>
-        <h1>Test</h1>
+      <Overlay />
+      <VoidArea />
+      <div className="app-container content-safe-area">
+        <Routes>
+          <Route path="/" element={<Navigate to="/home" replace />} />
+          <Route path="/home/*" element={<HomePage />} />
+          <Route path="/projects/:projectSlug" element={<h1>Parked</h1>} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
       </div>
     </div>
   );

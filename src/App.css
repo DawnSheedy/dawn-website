@@ -1,17 +1,58 @@
-body {
-  background-color: #4f4365;
-  color: #f1e0ff
+@media (prefers-color-scheme: dark) {
+  .app-container, button {
+    color: #fff;
+    text-shadow: 2.5px 0 1px rgba(0, 30, 255, 0.5), -2.5px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+  }
+
+  .app-container::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+    z-index: 2;
+    background-size: 100% 2px, 3px 100%;
+    pointer-events: none;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .app-container, button {
+    color: rgb(77, 63, 80);
+    text-shadow: 2.5px 0 1px rgba(142, 142, 142, 0.01), -2.5px 0 1px rgba(181, 181, 181, 0.01), 0 0 2.5px;
+  }
+
+  
+  .app-container::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.05) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.01), rgba(0, 255, 0, 0.005), rgba(0, 0, 255, 0.01));
+    z-index: 2;
+    background-size: 100% 2px, 3px 100%;
+    pointer-events: none;
+  }
 }
 
 .app-container {
-  width: 100vw;
-  height: 100vh;
+  z-index: 100;
   display: flex;
   justify-content: center;
-  align-items: center;
+  margin: 1rem;
+  height: calc(100vh - 2rem);
 }
 
-.main-content-area {
+.app-container.content-safe-area {
+  z-index: 999;
+  justify-content: left;
   width: 100%;
   max-width: 1080px;
+  margin: 0;
 }
