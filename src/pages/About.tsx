@@ -3,6 +3,7 @@ import { SlideInAll } from "../general/SlideInAll";
 import { HorizontalLine } from "../ambient/layout/HorizontalLine";
 import "./Pages.css";
 import { JobList } from "../fragments/JobList/JobList";
+import { SkillList } from "../fragments/SkillList/SkillList";
 
 export const About = () => {
   return (
@@ -40,6 +41,7 @@ export const About = () => {
           delivering a quality product is what brings me fulfillment.
         </p>
         <p>Here are some specific skills of mine:</p>
+        <SkillList />
         <h2>Resume 📝</h2>
         <HorizontalLine leftBrace={false} />
         <p>

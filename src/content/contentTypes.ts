@@ -1,6 +1,7 @@
 export enum SkillCategory {
-    TECH,
-    INTERPERSONAL,
+    PROGRAMMING,
+    LIBRARIES,
+    DEPLOYMENTS,
     BUSINESS,
     MISC
 }

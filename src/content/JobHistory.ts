@@ -1,12 +1,12 @@
 import { JobListing } from "./contentTypes";
-import { SkillList } from "./SkillList";
+import { SkillListRecord } from "./SkillList";
 
 const cwanJobEntry: JobListing = {
     startDate: new Date(2022, 7),
     company: "Clearwater Analytics",
     website: "https://clearwateranalytics.com",
     title: "L2 Software Development Engineer",
-    skills: [SkillList.java, SkillList.javaScript],
+    skills: [SkillListRecord.java, SkillListRecord.javaScript],
     description: "Test Description.",
     responsibilities: ['Test Entry 1', 'Test Entry 2'],
     slug: 'clearwater-analytics'
@@ -18,7 +18,7 @@ const pressHookJobEntry: JobListing = {
     company: "Press Hook",
     website: "https://presshook.com",
     title: "Full Stack Software Engineer",
-    skills: [SkillList.java, SkillList.javaScript],
+    skills: [SkillListRecord.java, SkillListRecord.javaScript],
     description: "Test Description.",
     responsibilities: ['Test Entry 1', 'Test Entry 2'],
     slug: 'press-hook'
@@ -30,10 +30,10 @@ const kinstoneJobEntry: JobListing = {
     company: "Kinstone, LLC",
     website: "https://www.linkedin.com/company/kinstone-events",
     title: "Volunteer Software Developer",
-    skills: [SkillList.java, SkillList.javaScript],
+    skills: [SkillListRecord.java, SkillListRecord.javaScript],
     description: "Test Description.",
     responsibilities: ['Test Entry 1', 'Test Entry 2'],
-    slug: 'press-hook'
+    slug: 'kinstone'
 }
 
 export const JobHistory = [cwanJobEntry, pressHookJobEntry, kinstoneJobEntry]

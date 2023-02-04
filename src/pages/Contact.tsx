@@ -2,6 +2,7 @@ import { SlideInAll } from "../general/SlideInAll";
 import { HorizontalLine } from "../ambient/layout/HorizontalLine";
 import "./Pages.css";
 import { IconButton } from "../general/IconButton";
+import { InlineLink } from "../general/InlineLink";
 
 export const Contact = () => {
   return (
@@ -23,6 +24,8 @@ export const Contact = () => {
             text="Email"
           ></IconButton>
         </div>
+        <p>For a simplified, PDF copy of my resume{" "}
+          <InlineLink href="/resume">you can click here.</InlineLink></p>
         <p className="mono quote">Note: I'm currently based in Seattle, WA.</p>
         <h2>Other Contact Info 📱</h2>
         <HorizontalLine leftBrace={false} />
