@@ -29,9 +29,15 @@ export const About = () => {
         <p>
           I've been writing code since I was 13 years old, working
           collaboratively since 2016, and working professionally since 2021.
-          Here are some specifics, click one for more details:
+          Here are some specifics:
         </p>
         <JobList></JobList>
+        <p>
+          For more details, check out{" "}
+          <InlineLink href="https://www.linkedin.com/in/dawnshee">
+            my LinkedIn.
+          </InlineLink>
+        </p>
         <h2>Skills 🧠</h2>
         <HorizontalLine leftBrace={false} />
         <p>
@@ -50,16 +56,15 @@ export const About = () => {
             my LinkedIn.
           </InlineLink>{" "}
           However, if you want a copy of my Resume,{" "}
-          <InlineLink href="/resume">you can click here.</InlineLink>
+          <InlineLink href="/resume-dawn-2023.pdf">
+            you can click here.
+          </InlineLink>
         </p>
-        <h2>Interests & Projects 👁️</h2>
+        <h2>Interests 👁️</h2>
         <HorizontalLine leftBrace={false} />
         <p>
           In my free time, you'll catch me playing games, listening to music,
-          and working on{" "}
-          <InlineLink href="/home/projects" local>
-            various cool projects.
-          </InlineLink>
+          and working on various cool projects.
         </p>
         <p>
           I play primarily play Apex Legends, Etterna, and sometimes osu. My

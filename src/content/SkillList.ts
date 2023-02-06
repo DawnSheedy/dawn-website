@@ -10,7 +10,6 @@ export const SkillListRecord: Record<string, Skill> = {
     python: { skillName: 'Python', category: SkillCategory.PROGRAMMING },
     java: { skillName: 'Java', category: SkillCategory.PROGRAMMING },
     cSharp: { skillName: 'C#', category: SkillCategory.PROGRAMMING },
-    cPlusPLus: { skillName: 'C++', category: SkillCategory.PROGRAMMING },
     stylesheets: { skillName: 'CSS/SASS/SCSS', category: SkillCategory.PROGRAMMING },
     websockets: { skillName: 'Websockets', category: SkillCategory.PROGRAMMING },
     microservices: { skillName: 'Microservices', category: SkillCategory.PROGRAMMING },
