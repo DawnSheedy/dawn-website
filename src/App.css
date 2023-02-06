@@ -73,6 +73,7 @@
 .app-container.content-safe-area {
   z-index: 999;
   overflow-y: auto;
+  overflow-x:hidden;
   justify-content: left;
   width: 100%;
   max-width: 1080px;

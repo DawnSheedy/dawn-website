@@ -1,5 +1,5 @@
 .page-container {
-    max-width: 640px;
+    max-width: min(640px, calc(100vw - 2rem));
 }
 
 .row-container {
