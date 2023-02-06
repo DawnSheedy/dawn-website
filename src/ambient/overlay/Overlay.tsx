@@ -21,7 +21,7 @@ export const Overlay = () => {
           ? `GO_HOME`
           : `${process.env.REACT_APP_NAME}@${process.env.REACT_APP_VERSION}`}
       </CornerElement>
-      <CornerElement bottom right>!!🏳️‍⚧️🏳️‍🌈!! :)</CornerElement>
+      <CornerElement bottom right>🏳️‍⚧️🏳️‍🌈</CornerElement>
     </div>
   );
 };
