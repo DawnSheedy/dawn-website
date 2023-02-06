@@ -1,4 +1,4 @@
-import { Route, Routes, useLocation, useParams } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import { Button } from "../general/Button";
 import { CenterContentContainer } from "../ambient/layout/CenterContentContainer";
 import { CollapsibleContentArea } from "../ambient/layout/CollapsibleContentArea";
