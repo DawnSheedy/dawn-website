@@ -55,22 +55,12 @@ export const About = () => {
           <InlineLink href="https://www.linkedin.com/in/dawnshee">
             my LinkedIn.
           </InlineLink>{" "}
-          However, if you want a copy of my Resume,{" "}
+          However, if you want a PDF copy of my Resume,{" "}
           <InlineLink href="/resume-dawn-2023.pdf">
             you can click here.
           </InlineLink>
         </p>
-        <h2>Interests 👁️</h2>
-        <HorizontalLine leftBrace={false} />
-        <p>
-          In my free time, you'll catch me playing games, listening to music,
-          and working on various cool projects.
-        </p>
-        <p>
-          I play primarily play Apex Legends, Etterna, and sometimes osu. My
-          favorite artists are CHVRCHES, ODESZA, Justice, Magdalena Bay, and
-          Porter Robinson.
-        </p>
+        <p className="mono quote">Note: This version has my phone and email redacted for a full version, contact me.</p>
       </SlideInAll>
     </div>
   );

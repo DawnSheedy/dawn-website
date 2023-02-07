@@ -27,32 +27,6 @@ export const Contact = () => {
         <p>For a simplified, PDF copy of my resume{" "}
           <InlineLink href="/resume-dawn-2023.pdf">you can click here.</InlineLink></p>
         <p className="mono quote">Note: I'm currently based in Seattle, WA.</p>
-        <h2>Other Contact Info 📱</h2>
-        <HorizontalLine leftBrace={false} />
-        <p>
-          Are you looking to reach me or collaborate in a non-professional
-          context? If so, you can find my social media below. Keep in mind I'm
-          not highly active.
-        </p>
-        <div className="row-container">
-          <IconButton
-            href="https://twitter.com/dawnshee_"
-            text="Twitter"
-          ></IconButton>
-          <IconButton
-            href="https://instagram.com/dawn.shee"
-            text="Instagram"
-          ></IconButton>
-        </div>
-        <p>
-          I'm also on Discord. However, I do not directly give out my username.
-          Please contact initially through a different channel.
-        </p>
-        <p className="mono quote">
-          Note: Thoughts and opinions expressed on my social media accounts are
-          mine and mine alone. They do not represent the interests of my past or
-          present employers.
-        </p>
       </SlideInAll>
     </div>
   );
