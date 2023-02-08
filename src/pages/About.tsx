@@ -60,7 +60,7 @@ export const About = () => {
             you can click here.
           </InlineLink>
         </p>
-        <p className="mono quote">Note: This version has my phone and email redacted for a full version, contact me.</p>
+        <p className="mono quote">Note: This version has my phone and email redacted. For a full version, contact me.</p>
       </SlideInAll>
     </div>
   );

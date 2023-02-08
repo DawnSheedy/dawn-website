@@ -34,6 +34,10 @@ export const HomePage = () => {
           internalHref={section === "/home/contact" ? "/home" : "/home/contact"}
           active={section === "/home/contact"}
         />
+        <Button
+            href="/resume-dawn-2023.pdf"
+            text="Resume"
+          />
       </div>
       <CollapsibleContentArea collapsed={section === "/home"}>
         <Routes>

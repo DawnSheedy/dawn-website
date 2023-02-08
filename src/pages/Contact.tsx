@@ -1,8 +1,8 @@
 import { SlideInAll } from "../general/SlideInAll";
 import { HorizontalLine } from "../ambient/layout/HorizontalLine";
 import "./Pages.css";
-import { IconButton } from "../general/IconButton";
 import { InlineLink } from "../general/InlineLink";
+import { Button } from "../general/Button";
 
 export const Contact = () => {
   return (
@@ -15,14 +15,14 @@ export const Contact = () => {
           you'd like to reach out to me, use the channels below:
         </p>
         <div className="row-container">
-          <IconButton
+          <Button
             href="https://www.linkedin.com/in/dawnshee"
             text="LinkedIn"
-          ></IconButton>
-          <IconButton
+          />
+          <Button
             href="mailto:contact@dawnsheedy.com"
             text="Email"
-          ></IconButton>
+          />
         </div>
         <p>For a simplified, PDF copy of my resume{" "}
           <InlineLink href="/resume-dawn-2023.pdf">you can click here.</InlineLink></p>

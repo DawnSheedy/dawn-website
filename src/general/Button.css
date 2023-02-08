@@ -9,6 +9,7 @@
   background: none;
   color: #9448a3;
   transition: all 0.25s;
+  text-decoration: none;
 }
 
 .app-button:hover,
