@@ -12,7 +12,7 @@ export const About = () => {
         <h2>Hi, I'm Dawn 🌄</h2>
         <HorizontalLine leftBrace={false} />
         <p>
-          I'm a Software Engineer with 4+ years of experience specializing in
+          I'm a Software Engineer with several years of experience specializing in
           web application development. I take pride in writing clean,
           documented, and reusable code. I love taking on challenges and working
           with others who are as passionate about technology as I am.
