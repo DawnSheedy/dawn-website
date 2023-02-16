@@ -2,8 +2,8 @@
   .app-container,
   button {
     color: #fff;
-    text-shadow: 2.5px 0 1px rgba(0, 30, 255, 0.5),
-      -2.5px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+    text-shadow: 1px 0 0.5px rgba(0, 30, 255, 0.5),
+      -1px 0 0.5px rgba(255, 0, 80, 0.3), 0 0 1px;
   }
 
   .app-container::before {
@@ -34,8 +34,8 @@
   .app-container,
   button {
     color: rgb(77, 63, 80);
-    text-shadow: 2.5px 0 1px rgba(142, 142, 142, 0.01),
-      -2.5px 0 1px rgba(181, 181, 181, 0.01), 0 0 2.5px;
+    text-shadow: 1px 0 1px rgba(142, 142, 142, 0.01),
+      -1px 0 0.5px rgba(181, 181, 181, 0.01), 0 0 1px;
   }
 
   .app-container::before {

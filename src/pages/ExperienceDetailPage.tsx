@@ -27,7 +27,7 @@ export const ExperienceDetailPage = () => {
       return;
     }
     setJob(resolvedJob);
-  }, [jobSlug]);
+  }, [jobSlug, navigate]);
 
   return (
     <CenterContentContainer>

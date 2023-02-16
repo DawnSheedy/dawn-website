@@ -1,6 +1,6 @@
 import { SlideInAll } from "../general/SlideInAll";
 import { HorizontalLine } from "../ambient/layout/HorizontalLine";
-import "./Pages.css";
+import "./Pages.scss";
 import { InlineLink } from "../general/InlineLink";
 import { Button } from "../general/Button";
 

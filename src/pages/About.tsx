@@ -1,7 +1,7 @@
 import { InlineLink } from "../general/InlineLink";
 import { SlideInAll } from "../general/SlideInAll";
 import { HorizontalLine } from "../ambient/layout/HorizontalLine";
-import "./Pages.css";
+import "./Pages.scss";
 import { JobList } from "../fragments/JobList/JobList";
 import { SkillList } from "../fragments/SkillList/SkillList";
 

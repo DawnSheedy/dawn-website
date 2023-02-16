@@ -3,6 +3,7 @@
 .inline-link {
   color: $text-color-accent;
   transition: all .25s;
+  cursor: pointer;
 }
 
 .inline-link:hover {

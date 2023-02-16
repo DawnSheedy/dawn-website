@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
-import cancelMotion from "../../util/cancelMotion";
+import { cancelMotion } from "../../util/cancelMotion";
 import { generateAnimationDelay } from "../../util/generateAnimationDelay";
 import { getRandomNumber } from "../../util/randomNumberGen";
 import "./VoidBlock.scss";

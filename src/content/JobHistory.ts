@@ -1,8 +1,3 @@
-import { HorizontalLine } from "../ambient/layout/HorizontalLine";
-import { JobList } from "../fragments/JobList/JobList";
-import { SkillList } from "../fragments/SkillList/SkillList";
-import { InlineLink } from "../general/InlineLink";
-import { SlideInAll } from "../general/SlideInAll";
 import { JobListing } from "./contentTypes";
 import { SkillListRecord } from "./SkillList";
 
