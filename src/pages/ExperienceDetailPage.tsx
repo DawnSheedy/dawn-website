@@ -13,7 +13,7 @@ import { SlideInAll } from "../general/SlideInAll";
  * Page for rendering a JobListing
  * Pulls context based on slug in params { jobSlug }
  */
-export const ExperienceDetailPage = () => {
+export default () => {
   const { jobSlug } = useParams();
   const navigate = useNavigate();
   const [job, setJob] = useState<JobListing>(JobHistory[0]);

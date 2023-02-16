@@ -1,5 +1,6 @@
 import { JobHistory } from "../../content/JobHistory";
 import { JobListItem } from "./JobListItem";
+import './JobList.scss'
 
 export const JobList = () => {
   return (

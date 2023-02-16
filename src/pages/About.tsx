@@ -5,15 +5,16 @@ import "./Pages.scss";
 import { JobList } from "../fragments/JobList/JobList";
 import { SkillList } from "../fragments/SkillList/SkillList";
 
-export const About = () => {
+// About page
+const About = () => {
   return (
     <div className="page-container">
       <SlideInAll>
         <h2>Hi, I'm Dawn 🌄</h2>
         <HorizontalLine leftBrace={false} />
         <p>
-          I'm a Software Engineer with several years of experience specializing in
-          web application development. I take pride in writing clean,
+          I'm a Software Engineer with several years of experience specializing
+          in web application development. I take pride in writing clean,
           documented, and reusable code. I love taking on challenges and working
           with others who are as passionate about technology as I am.
         </p>
@@ -60,8 +61,13 @@ export const About = () => {
             you can click here.
           </InlineLink>
         </p>
-        <p className="mono quote">Note: This version has my phone and email redacted. For a full version, contact me.</p>
+        <p className="mono quote">
+          Note: This version has my phone and email redacted. For a full
+          version, contact me.
+        </p>
       </SlideInAll>
     </div>
   );
 };
+
+export default About;

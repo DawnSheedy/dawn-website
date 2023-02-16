@@ -1,4 +1,4 @@
-@import '../../variables.scss';
+@import '../../styles/variables.scss';
 
 .collapsible-content-area {
   height: fit-content;
@@ -9,6 +9,7 @@
   flex-grow: 1;
   max-height: 0px;
   height: 100%;
+  pointer-events: auto;
 }
 
 .collapsible-content-area.collapsed {

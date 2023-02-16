@@ -1,0 +1,56 @@
+@import '../../styles/variables.scss';
+
+.skill-list-container {
+  padding: 0.25rem;
+
+  &-header {
+    display: flex;
+    gap: 0.25rem;
+    flex-wrap: wrap;
+    border-bottom: 2px solid;
+    padding-bottom: 0.25rem;
+    margin-bottom: 0.25rem;
+  }
+
+  &-body {
+    display: flex;
+    gap: 0.25rem;
+    flex-wrap: wrap;
+  }
+}
+
+.skill-list-tab {
+  position: relative;
+  background: none;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  opacity: 0.75;
+  transition: opacity 0.25s;
+
+  &:hover,
+  &:focus,
+  &.active {
+    opacity: 1;
+
+    &::after {
+      opacity: 1;
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  &::after {
+    content: "";
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    width: 0%;
+    height: 0%;
+    opacity: 0;
+    background: linear-gradient(to top, rgba(87, 54, 126, 0.25), $invisible);
+    transition: all 0.25s;
+    border-bottom: 1px solid;
+    border-left: 1px solid;
+  }
+}

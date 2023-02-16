@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Skill, SkillCategory } from "../../content/contentTypes";
 import { SkillListRecord } from "../../content/SkillList";
 import { generateClassNames } from "../../util/generateClassNames";
-import "./SkillList.css";
+import "./SkillList.scss";
 import { SkillListItem } from "./SkillListItem";
 
 export interface SkillListProps {

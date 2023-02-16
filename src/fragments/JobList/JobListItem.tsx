@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { JobListing } from "../../content/contentTypes";
 import { SlideInAll } from "../../general/SlideInAll";
 import { generateClassNames } from "../../util/generateClassNames";
-import "./JobListItem.css";
+import "./JobListItem.scss";
 
 export const JobListItem = ({
   company,

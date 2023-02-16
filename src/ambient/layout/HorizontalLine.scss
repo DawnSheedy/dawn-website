@@ -1,0 +1,27 @@
+@import "../../styles/variables.scss";
+
+.horizontal-line {
+  margin-top: 1rem;
+  position: relative;
+  overflow: visible;
+  border-color: $text-color-primary;
+
+  &.left-brace::before {
+    content: "";
+    position: absolute;
+    width: 2.5rem;
+    transform: translateX(-34px) translateY(-15px) rotate(45deg);
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+  }
+
+  &.right-brace::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    width: 2.5rem;
+    transform: translateX(35px) translateY(14px) rotate(45deg);
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+  }
+}

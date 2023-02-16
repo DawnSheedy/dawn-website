@@ -1,18 +1,19 @@
-import React from "react";
+import React, { lazy, Suspense } from "react";
 import { createRoot } from "react-dom/client";
-import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import "./index.css";
-import "./sharedStyles/animations.scss";
 import { HashRouter } from "react-router-dom";
 
 const container = document.getElementById("root")!;
 const root = createRoot(container);
 
+const App = lazy(() => import("./App"));
+
 root.render(
   <React.StrictMode>
     <HashRouter>
-      <App />
+      <Suspense>
+        <App />
+      </Suspense>
     </HashRouter>
   </React.StrictMode>
 );

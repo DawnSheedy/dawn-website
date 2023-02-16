@@ -1,4 +1,4 @@
-@import '../variables.scss';
+@import './variables.scss';
 
 @keyframes fade-in {
     0% {
@@ -98,10 +98,10 @@
 }
 
 .right > .shift-in-directional {
+  opacity: 0;
   animation: shift-in-directional-right $animation-speed-mid, fade-in $animation-speed-quick linear;
   animation-fill-mode: forwards;
   animation-iteration-count: 1;
-  opacity: 0;
 }
 
 @keyframes shift-in-directional-right {
@@ -114,8 +114,8 @@
 }
 
 .left > .shift-in-directional {
+  opacity: 0;
   animation: shift-in-directional-left $animation-speed-mid, fade-in $animation-speed-slow linear;
   animation-fill-mode: forwards;
   animation-iteration-count: 1;
-  opacity: 0;
 }

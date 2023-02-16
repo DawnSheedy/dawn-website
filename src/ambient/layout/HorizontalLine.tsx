@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { generateAnimationDelay } from "../../util/generateAnimationDelay";
 import { generateClassNames } from "../../util/generateClassNames";
-import "./HorizontalLine.css";
+import "./HorizontalLine.scss";
 
 export interface HorizontalLineProps {
   leftBrace?: boolean;

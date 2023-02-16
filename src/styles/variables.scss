@@ -4,6 +4,7 @@
     --text-color-accent: #9448a3;
     --void-color: #FFF;
     --glow-shade: rgb(216 182 255);
+    --neon-green: rgb(0, 203, 0);
   }
 }
 
@@ -13,13 +14,14 @@
     --text-color-accent: #f2b3ff;
     --void-color: #000;
     --glow-shade: rgb(87, 54, 126);
+    --neon-green: rgb(77, 224, 77);
   }
 }
 
 body {
     --animation-speed-quick: 0.25s;
     --animation-speed-mid: 0.5s;
-    --animation-speed-slow: 0.75s;
+    --animation-speed-slow: 1s;
 }
 
 @media (prefers-reduced-motion) {
@@ -35,6 +37,7 @@ $text-color-primary: var(--text-color-primary);
 $text-color-accent: var(--text-color-accent);
 $void-color: var(--void-color);
 $glow-shade: var(--glow-shade);
+$neon-green: var(--neon-green);
 
 // Theme-independent
 $invisible: #0000;

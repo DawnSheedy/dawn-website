@@ -3,10 +3,12 @@ import { Button } from "../general/Button";
 import { CenterContentContainer } from "../ambient/layout/CenterContentContainer";
 import { CollapsibleContentArea } from "../ambient/layout/CollapsibleContentArea";
 import { PageHeading } from "../ambient/layout/PageHeading";
-import { About } from "./About";
-import { Contact } from "./Contact";
+import { lazy, Suspense } from "react";
 
-export const HomePage = () => {
+const About = lazy(() => import("./About"));
+const Contact = lazy(() => import("./Contact"));
+
+const HomePage = () => {
   const { pathname: section } = useLocation();
 
   return (
@@ -24,27 +26,28 @@ export const HomePage = () => {
           internalHref={section === "/home/about" ? "/home" : "/home/about"}
           active={section === "/home/about"}
         />
-        {/* <Button
+        <Button
           text="PROJECTS"
           internalHref={section === "/home/projects" ? "/home" : "/home/projects"}
           active={section === "/home/projects"}
-        /> */}
+        />
         <Button
           text="CONTACT"
           internalHref={section === "/home/contact" ? "/home" : "/home/contact"}
           active={section === "/home/contact"}
         />
-        <Button
-            href="/resume-dawn-2023.pdf"
-            text="Resume"
-          />
+        <Button href="/resume-dawn-2023.pdf" text="Resume" />
       </div>
       <CollapsibleContentArea collapsed={section === "/home"}>
-        <Routes>
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
+        <Suspense fallback={<h2>Loading, hang on! ⏳</h2>}>
+          <Routes>
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </Suspense>
       </CollapsibleContentArea>
     </CenterContentContainer>
   );
 };
+
+export default HomePage;

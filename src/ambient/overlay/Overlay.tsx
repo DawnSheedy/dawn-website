@@ -2,7 +2,7 @@ import { useLocation, useNavigate } from "react-router-dom";
 import { CornerElement } from "./CornerElement";
 import "./Overlay.scss";
 
-export const Overlay = () => {
+export default () => {
   const location = useLocation();
   const navigate = useNavigate();
 

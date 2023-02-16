@@ -1,4 +1,4 @@
-@import "../../variables.scss";
+@import "../../styles/variables.scss";
 
 .void-container {
   position: absolute;
@@ -26,7 +26,6 @@
 .void-root-container {
   z-index: -1;
   position: absolute;
-  pointer-events: none;
   width: 100vw;
   height: 100vh;
   top: 0;

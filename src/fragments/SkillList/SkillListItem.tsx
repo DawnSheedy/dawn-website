@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Skill } from "../../content/contentTypes";
 import { generateAnimationDelay } from "../../util/generateAnimationDelay";
-import "./SkillListItem.css";
+import "./SkillListItem.scss";
 
 export interface SkillListItemProps {
   skill: Skill;

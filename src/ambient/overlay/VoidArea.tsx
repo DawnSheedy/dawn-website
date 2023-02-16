@@ -1,7 +1,7 @@
 import "./VoidArea.scss";
 import { VoidBlock } from "./VoidBlock";
 
-export const VoidArea = () => {
+export default () => {
   const renderVoidBlocks = () => {
     return Array.from({ length: 20 }, (v, i) => i).map((number) => (
       <VoidBlock key={number} />
