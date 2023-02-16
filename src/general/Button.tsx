@@ -1,22 +1,27 @@
 import { useNavigate } from "react-router-dom";
 import { generateAnimationDelay } from "../util/generateAnimationDelay";
 import { generateClassNames } from "../util/generateClassNames";
-import "./Button.css";
+import "./Button.scss";
 
 export interface ButtonProps {
-  text: string;
+  text?: string;
   active?: boolean;
   onClick?: () => void;
   href?: string;
   internalHref?: string;
+  children?: React.ReactNode;
 }
 
+/**
+ * Button component
+ */
 export const Button = ({
   text,
   onClick,
   active,
   href,
   internalHref,
+  children,
 }: ButtonProps) => {
   const navigate = useNavigate();
 
@@ -31,6 +36,7 @@ export const Button = ({
         onClick={onClick}
       >
         {text}
+        {children}
       </a>
     );
 

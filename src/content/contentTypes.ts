@@ -11,6 +11,11 @@ export interface Skill {
     category: SkillCategory
 }
 
+export interface RichContentSection {
+    heading: string;
+    paragraphs: string[];
+}
+
 export interface JobListing {
     startDate: Date;
     endDate?: Date;
@@ -19,6 +24,6 @@ export interface JobListing {
     title: string;
     skills: Skill[]
     description: string;
-    responsibilities: string[];
     slug: string;
+    richContent?: RichContentSection[]
 }

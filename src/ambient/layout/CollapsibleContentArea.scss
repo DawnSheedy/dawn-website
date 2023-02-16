@@ -1,9 +1,11 @@
+@import '../../variables.scss';
+
 .collapsible-content-area {
   height: fit-content;
   opacity: 1;
   overflow: visible;
   padding-right: 2rem;
-  transition: all 0.75s;
+  transition: all $animation-speed-slow, opacity 0.75s;
   flex-grow: 1;
   max-height: 0px;
   height: 100%;

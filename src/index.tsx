@@ -3,7 +3,7 @@ import { createRoot } from "react-dom/client";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import "./index.css";
-import "./sharedStyles/animations.css";
+import "./sharedStyles/animations.scss";
 import { HashRouter } from "react-router-dom";
 
 const container = document.getElementById("root")!;

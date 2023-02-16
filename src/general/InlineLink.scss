@@ -1,0 +1,10 @@
+@import '../variables.scss';
+
+.inline-link {
+  color: $text-color-accent;
+  transition: all .25s;
+}
+
+.inline-link:hover {
+  color: $text-color-primary;
+}

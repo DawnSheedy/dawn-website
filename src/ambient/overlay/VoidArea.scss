@@ -1,0 +1,42 @@
+@import "../../variables.scss";
+
+.void-container {
+  position: absolute;
+  width: 100vw;
+  min-height: 100vh;
+  max-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  max-width: max(0px, calc(50vw - 540px - 1rem));
+
+  &.left {
+    background-image: linear-gradient(to right, $glow-shade, #0000);
+    left: 0;
+    align-items: flex-start;
+  }
+
+  &.right {
+    background-image: linear-gradient(to left, $glow-shade, #0000);
+    right: 0;
+    align-items: flex-end;
+  }
+}
+
+.void-root-container {
+  z-index: -1;
+  position: absolute;
+  pointer-events: none;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+
+@media screen and (max-width: 1440px) {
+  .void-root-container {
+    opacity: 0;
+  }
+}

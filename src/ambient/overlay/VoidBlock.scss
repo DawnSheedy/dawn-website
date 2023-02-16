@@ -1,0 +1,48 @@
+@import "../../variables.scss";
+
+.void-block {
+  position: relative;
+  background-color: $void-color;
+  width: 100%;
+  transition: max-width $animation-speed-slow;
+  animation-duration: $animation-speed-slow;
+  height: 5vh;
+
+  &::before,
+  &::after {
+    z-index: 999;
+    content: "";
+    position: absolute;
+    width: 1rem;
+    background-color: $void-color;
+    height: 100%;
+  }
+
+  &::before {
+    width: 0.5rem;
+  }
+}
+
+.right {
+  & > .void-block::after {
+    left: -1.75rem;
+    opacity: 0.5;
+  }
+
+  & > .void-block::before {
+    left: -3rem;
+    opacity: 0.25;
+  }
+}
+
+.left {
+  & > .void-block::after {
+    right: -1.75rem;
+    opacity: 0.5;
+  }
+
+  & > .void-block::before {
+    right: -3rem;
+    opacity: 0.25;
+  }
+}

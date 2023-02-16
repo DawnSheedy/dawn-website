@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import "./InlineLink.css";
+import "./InlineLink.scss";
 
 export interface InlineLinkProps {
   href: string;

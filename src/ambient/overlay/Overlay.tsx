@@ -1,6 +1,6 @@
 import { useLocation, useNavigate } from "react-router-dom";
 import { CornerElement } from "./CornerElement";
-import "./Overlay.css";
+import "./Overlay.scss";
 
 export const Overlay = () => {
   const location = useLocation();

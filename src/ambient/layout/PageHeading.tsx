@@ -10,7 +10,6 @@ export interface PageHeadingProps {
   description?: string;
   contentDate?: Date;
   contentCategory?: string;
-  contentTags?: string[];
   showBottomDivider?: boolean;
   mono?: boolean;
 }
@@ -22,7 +21,6 @@ export const PageHeading = ({
   contentDate,
   contentCategory,
   description,
-  contentTags,
   showBottomDivider,
   mono,
 }: PageHeadingProps) => {

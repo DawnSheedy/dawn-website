@@ -26,9 +26,9 @@ export const JobListItem = ({
 
   return (
     <div
-      // onClick={clickHandler}
-      // onKeyDown={keyDownhandler}
-      // tabIndex={0}
+      onClick={clickHandler}
+      onKeyDown={keyDownhandler}
+      tabIndex={0}
       aria-description={`More details about role as a ${title} at ${company}`}
       role="link"
       className={generateClassNames({

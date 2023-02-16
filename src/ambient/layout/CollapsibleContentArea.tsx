@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { generateClassNames } from "../../util/generateClassNames";
-import "./CollapsibleContentArea.css";
+import "./CollapsibleContentArea.scss";
 
 export interface CollapsibleContentAreaProps {
   collapsed?: boolean;

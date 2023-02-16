@@ -1,5 +1,5 @@
 import { generateClassNames } from "../../util/generateClassNames";
-import "./CornerElement.css";
+import "./CornerElement.scss";
 
 interface CornerElementTopProps {
   top: true;

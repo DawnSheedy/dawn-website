@@ -1,4 +1,4 @@
-import "./VoidArea.css";
+import "./VoidArea.scss";
 import { VoidBlock } from "./VoidBlock";
 
 export const VoidArea = () => {
