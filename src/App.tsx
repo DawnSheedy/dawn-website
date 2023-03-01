@@ -5,6 +5,7 @@ import { Routes, Route, Navigate } from "react-router-dom";
 import { NotFound } from "./pages/NotFound";
 import { lazy, Suspense } from "react";
 
+/* Lazy load sub pages */
 const HomePage = lazy(() => import("./pages/HomePage"));
 const ExperienceDetailPage = lazy(() => import("./pages/ExperienceDetailPage"));
 const Overlay = lazy(() => import("./ambient/overlay/Overlay"));

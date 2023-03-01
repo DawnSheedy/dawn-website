@@ -8,6 +8,9 @@ export interface HorizontalLineProps {
   rightBrace?: boolean;
 }
 
+/**
+ * Stylized horizontal line with optional diagonal flair on either side
+ */
 export const HorizontalLine = ({
   leftBrace = true,
   rightBrace = true,

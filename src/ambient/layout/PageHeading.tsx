@@ -14,6 +14,9 @@ export interface PageHeadingProps {
   mono?: boolean;
 }
 
+/**
+ * The heading for a page
+ */
 export const PageHeading = ({
   title,
   titleFlavorText,

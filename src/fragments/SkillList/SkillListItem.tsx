@@ -7,6 +7,9 @@ export interface SkillListItemProps {
   skill: Skill;
 }
 
+/**
+ * Item in the skill list
+ */
 export const SkillListItem = ({ skill }: SkillListItemProps) => {
   const animationDelay = useState(generateAnimationDelay(0, 250))[0];
   return (

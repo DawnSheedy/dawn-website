@@ -5,6 +5,10 @@ import { generateAnimationDelay } from "../../util/generateAnimationDelay";
 import { getRandomNumber } from "../../util/randomNumberGen";
 import "./VoidBlock.scss";
 
+/**
+ * A single block in the void area.
+ * Automatically resizes on page change (if reduce motion not enabled)
+ */
 export const VoidBlock = () => {
   const location = useLocation();
 

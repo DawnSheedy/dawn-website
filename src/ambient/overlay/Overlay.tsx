@@ -2,6 +2,9 @@ import { useLocation, useNavigate } from "react-router-dom";
 import { CornerElement } from "./CornerElement";
 import "./Overlay.scss";
 
+/**
+ * The overlay for the page. Includes FX/Corner elements
+ */
 export default () => {
   const location = useLocation();
   const navigate = useNavigate();

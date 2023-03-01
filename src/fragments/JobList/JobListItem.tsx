@@ -5,6 +5,9 @@ import { SlideInAll } from "../../general/SlideInAll";
 import { generateClassNames } from "../../util/generateClassNames";
 import "./JobListItem.scss";
 
+/**
+ * List item for employment list
+ */
 export const JobListItem = ({
   company,
   title,

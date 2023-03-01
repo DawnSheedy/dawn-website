@@ -9,6 +9,10 @@ export interface SkillListProps {
   skillSet?: Skill[];
 }
 
+/**
+ * A list of skills.
+ * Shows all defined skills if no skillSet provided
+ */
 export const SkillList = ({ skillSet }: SkillListProps) => {
   const [skillList, setSkillList] = useState(
     skillSet ? skillSet : Object.values(SkillListRecord)

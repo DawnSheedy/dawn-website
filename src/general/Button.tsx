@@ -14,6 +14,7 @@ export interface ButtonProps {
 
 /**
  * Button component
+ * Allows navigation to internal paths, external paths, and custom behavior.
  */
 export const Button = ({
   text,

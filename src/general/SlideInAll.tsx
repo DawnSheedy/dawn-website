@@ -5,6 +5,9 @@ export interface SlideInAllProps {
   children: React.ReactNode;
 }
 
+/**
+ * Component that applies a slide in effect to all direct children
+ */
 export const SlideInAll = ({ children }: SlideInAllProps) => {
   const childrenWithProps = React.Children.map(children, (child) => {
     if (React.isValidElement(child)) {

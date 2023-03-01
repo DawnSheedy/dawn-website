@@ -8,6 +8,9 @@ export interface InlineLinkProps {
   children?: React.ReactNode;
 }
 
+/**
+ * A purely based with text, no borders like a button.
+ */
 export const InlineLink = ({ href, local, children }: InlineLinkProps) => {
   const navigate = useNavigate();
 

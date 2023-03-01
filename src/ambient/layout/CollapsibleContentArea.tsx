@@ -7,6 +7,9 @@ export interface CollapsibleContentAreaProps {
   children: React.ReactNode;
 }
 
+/**
+ * Container that automatically collapses and expands to the exact height of its content
+ */
 export const CollapsibleContentArea = ({
   collapsed,
   children,
