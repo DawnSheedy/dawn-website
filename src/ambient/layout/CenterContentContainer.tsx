@@ -1,4 +1,4 @@
-import "./CenterContentContainer.css";
+import "./CenterContentContainer.scss";
 
 export interface CenterContentContainerProps {
   children: React.ReactNode;

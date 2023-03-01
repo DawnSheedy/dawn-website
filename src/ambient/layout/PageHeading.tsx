@@ -1,7 +1,7 @@
 import { generateAnimationDelay } from "../../util/generateAnimationDelay";
 import { generateClassNames } from "../../util/generateClassNames";
 import { HorizontalLine } from "./HorizontalLine";
-import "./PageHeading.css";
+import "./PageHeading.scss";
 
 export interface PageHeadingProps {
   title: string;
