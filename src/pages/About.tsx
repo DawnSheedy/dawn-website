@@ -36,8 +36,10 @@ const About = () => {
         <p>
           For more details, check out{" "}
           <InlineLink href="https://www.linkedin.com/in/dawnshee">
-            my LinkedIn.
-          </InlineLink>
+            my LinkedIn
+          </InlineLink> or <InlineLink href="/resume-dawn-2023.pdf">
+            my resume.
+          </InlineLink> 
         </p>
         <h2>Skills 🧠</h2>
         <HorizontalLine leftBrace={false} />

@@ -26,11 +26,11 @@ const HomePage = () => {
           internalHref={section === "/home/about" ? "/home" : "/home/about"}
           active={section === "/home/about"}
         />
-        <Button
+        {/* <Button
           text="PROJECTS"
           internalHref={section === "/home/projects" ? "/home" : "/home/projects"}
           active={section === "/home/projects"}
-        />
+        /> */}
         <Button
           text="CONTACT"
           internalHref={section === "/home/contact" ? "/home" : "/home/contact"}

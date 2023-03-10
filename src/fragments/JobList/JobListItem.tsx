@@ -29,7 +29,7 @@ export const JobListItem = ({
 
   return (
     <div
-      onClick={clickHandler}
+      //onClick={clickHandler}
       onKeyDown={keyDownhandler}
       tabIndex={0}
       aria-description={`More details about role as a ${title} at ${company}`}
