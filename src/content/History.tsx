@@ -8,7 +8,7 @@ export const History = () => {
       </SectionHeading>
       <p>
         My resumé can be found{" "}
-        <a href="/public/Dawn Sheedy 2025.pdf" aria-label="link to resumé">
+        <a href="/Dawn Sheedy 2025.pdf" aria-label="link to resumé">
           here.
         </a>{" "}
         Note that this version has my email and phone number redacted.
