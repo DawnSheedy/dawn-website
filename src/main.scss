@@ -1,0 +1,30 @@
+@use "./mixins.scss" as *;
+
+body {
+  font-size: 16px;
+  background-color: $background;
+  color: $text;
+  height: 100vh;
+  margin: 0;
+}
+
+a {
+  color: $accent-color;
+  text-decoration: none;
+  transition: color 0.3s;
+
+  &:hover {
+    text-decoration: underline;
+    color: $text;
+  }
+}
+
+#root {
+  @include nunito-sans();
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}

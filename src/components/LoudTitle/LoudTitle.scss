@@ -1,0 +1,11 @@
+@use "../../mixins.scss" as *;
+
+.loud-title {
+  @include special-gothic-expanded();
+
+  font-size: 3.5rem;
+  color: $accent-color;
+  display: block;
+  line-height: 3.5rem;
+  margin-bottom: 0.5rem;
+}

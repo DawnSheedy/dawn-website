@@ -1,0 +1,12 @@
+.main-heading-container {
+    flex-grow: 1;
+    min-width: 50%;
+}
+
+section {
+    margin-bottom: 2rem;
+
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+}

@@ -1,2 +1,5 @@
 # dawn-website
- personal website, written in react
+
+Personal landing page, written in React.
+
+Built with Vite.
