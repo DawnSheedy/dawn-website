@@ -5,6 +5,8 @@
     gap: 2rem;
     padding: 1rem;
     align-items: center;
+    max-height: 100dvh;
+    overflow: auto;
 
     @media screen and (max-width: 990px) {
         flex-direction: column;

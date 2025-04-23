@@ -1,4 +1,4 @@
-import "./Subtitle.scss";
+import "./LoudSubtitle.scss";
 
 interface LoudSubtitleProps {
   children: React.ReactNode;

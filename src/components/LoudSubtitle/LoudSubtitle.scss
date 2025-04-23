@@ -1,6 +1,6 @@
 @use "../../mixins.scss" as *;
 
 .loud-subtitle {
-  @include special-gothic-expanded();
+  @include bold-text();
   font-size: 1.5rem;
 }

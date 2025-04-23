@@ -1,7 +1,7 @@
 @use "../../mixins.scss" as *;
 
 .section-heading {
-  @include special-gothic-expanded();
+  @include bold-text();
   font-size: 1.25rem;
 
   margin-bottom: 0.5rem;
